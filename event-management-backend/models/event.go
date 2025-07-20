@@ -10,7 +10,7 @@ import (
 type Event struct {
 	ID                    uint      `json:"id" gorm:"primarykey"`
 	UserID                uint      `json:"userId" gorm:"column:user_id;not null"`
-	Name                  string    `json:"name" gorm:"column:title;not null"`
+	Title                 string    `json:"title" gorm:"column:title;not null"`
 	Description           string    `json:"description" gorm:"column:description;not null;default:''"`
 	Location              string    `json:"location" gorm:"column:location;default:null"`
 	TotalTicketsPurchased int64     `json:"totalTicketsPurchased" gorm:"-"`

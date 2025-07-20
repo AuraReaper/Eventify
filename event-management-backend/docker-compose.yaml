@@ -2,7 +2,7 @@ services:
   app:
     build: .
     ports:
-      - "3000:3000"
+      - "0.0.0.0:3000:3000"  # Bind to all interfaces to allow external access
     networks:
       - application
     depends_on:
@@ -20,7 +20,7 @@ services:
     image: postgres:alpine
     container_name: eveng-managemet-db
     environment:
-      - POSTGRES_DB=postgres
+      - POSTGRES_DB=${DB_NAME}
       - POSTGRES_USER=${DB_USER}
       - POSTGRES_PASSWORD=${DB_PASSWORD}
     ports:
