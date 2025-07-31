@@ -2,6 +2,8 @@
 
 A personal full-stack event management application built with Go Fiber backend and React Native (Expo) frontend. This system demonstrates modern software architecture with seamless event creation, ticket purchasing, and real-time event management featuring role-based access control.
 
+[Download the app](https://expo.dev/accounts/aurareaper/projects/eventify/builds/85ec0ead-fe20-4588-91b9-b7bbddae7296)
+
 ## 📋 Table of Contents
 - [Architecture Overview](#architecture-overview)
 - [Technology Stack](#technology-stack)
